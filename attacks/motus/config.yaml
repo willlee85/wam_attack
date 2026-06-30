@@ -1,0 +1,13 @@
+attack:
+  enabled: true
+  apply_after_resize: true
+  type: noise
+  noise_path: attacks/motus/outputs/click_alarmclock_whitebox/best_noise.pt
+  patch_path: attacks/motus/outputs/click_alarmclock_patch_whitebox/best_patch.pt
+  patch:
+    rel_x: 0.7
+    rel_y: 0.1
+    rel_width: 0.16
+    rel_height: 0.16
+    alpha: 1.0
+paths_config: Motus/RoboTwin/policy/Motus/paths_config.yml

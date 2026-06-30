@@ -1,0 +1,10 @@
+# Copy to paths_config.local.yml and set absolute paths on your machine.
+robotwin_root: "Motus/RoboTwin"
+conda_env: "robotwin"
+checkpoint_path: "Motus/pretrained_models/Motus_robotwin2"
+wan_path: "Motus/pretrained_models/Wan2.2-TI2V-5B"
+vlm_path: "Motus/pretrained_models/Qwen3-VL-2B-Instruct"
+gpu_ids: [0]
+task_config: "demo_randomized"
+seed: 42
+tasks_file: "tasks_all.txt"

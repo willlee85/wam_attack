@@ -1,0 +1,16 @@
+train:
+  task_name: click_alarmclock
+  task_config: demo_randomized
+  num_states: 8
+  num_iters: 200
+  num_inference_steps: 10
+  seed_start: 4300000
+  lr: 0.01
+  epsilon: 0.031372549
+  init_std: 0.001
+  loss_type: mse
+  grad_clip_norm: 1.0
+  log_every: 10
+  output_dir: attacks/motus/outputs/click_alarmclock_whitebox
+  device: cuda
+paths_config: Motus/RoboTwin/policy/Motus/paths_config.yml

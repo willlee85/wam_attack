@@ -1,0 +1,14 @@
+# Basic experiment configuration (keep unchanged)
+policy_name: motus_attack
+task_name: null
+task_config: null
+ckpt_setting: null
+seed: null
+instruction_type: unseen
+
+# Motus model config (resolved inside motus_attack.get_model)
+model_config: robotwin.yml
+
+# Attack overrides (can be replaced via --overrides on CLI)
+attack_enabled: true
+attack_noise_path: null

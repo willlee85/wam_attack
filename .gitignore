@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Large artifacts (download separately)
+Motus/pretrained_models/
+Motus/data/
+Motus/RoboTwin/assets/background_texture/
+Motus/RoboTwin/assets/objects/
+Motus/RoboTwin/assets/embodiments/
+Motus/RoboTwin/assets/files/
+Motus/RoboTwin/eval_result/
+Motus/RoboTwin/eval_video/
+Motus/RoboTwin/policy/weights/
+Motus/RoboTwin/policy/Motus/logs_*/
+
+# Attack outputs
+attacks/motus/outputs/
+attacks/motus/logs_*/
+
+# Checkpoints & media
+*.pt
+*.pth
+*.safetensors
+*.mp4
+*.npy
+*.log
+
+# IDE
+.vscode/
+.idea/

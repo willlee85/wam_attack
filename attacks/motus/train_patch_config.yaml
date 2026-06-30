@@ -1,0 +1,23 @@
+train:
+  task_name: click_alarmclock
+  task_config: demo_randomized
+  num_states: 8
+  num_iters: 20000
+  num_inference_steps: 10
+  seed_start: 4300000
+  lr: 0.01
+  loss_type: mse
+  grad_clip_norm: 1.0
+  log_every: 100
+  save_every: 1000
+  resume_from: attacks/motus/outputs/click_alarmclock_patch_whitebox/best_patch.pt
+  output_dir: attacks/motus/outputs/click_alarmclock_patch_whitebox
+  device: cuda
+  patch:
+    rel_x: 0.7
+    rel_y: 0.1
+    rel_width: 0.16
+    rel_height: 0.16
+    alpha: 1.0
+    init_mode: random
+paths_config: Motus/RoboTwin/policy/Motus/paths_config.yml
