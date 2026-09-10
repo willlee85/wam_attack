@@ -20,6 +20,8 @@ Motus/RoboTwin/policy/Motus/logs_*/
 # Attack outputs
 attacks/motus/outputs/
 attacks/motus/logs_*/
+attacks/lingbot/outputs/
+outputs/
 
 # Checkpoints & media
 *.pt

@@ -10,6 +10,7 @@ wam_attack/
 │   └── RoboTwin/          # RoboTwin simulation & evaluation
 ├── attacks/
 │   ├── motus/             # Motus-specific attack train/eval scripts
+│   ├── lingbot/           # LingBot-VLA WAC / VAE / joint-energy attacks
 │   └── fastwam/common/    # Shared noise/patch utilities
 ```
 
@@ -43,6 +44,16 @@ GPU_ID=7 TASK_NAME=click_alarmclock bash ../../attacks/motus/eval.sh
 
 # Clean baseline
 bash policy/Motus/eval.sh
+```
+
+## Attack workflow (LingBot-VLA / RoboTwin)
+
+See `attacks/lingbot/README.md` for WAC, VAE-energy, and joint-energy PGD attacks.
+Copy `attacks/lingbot/experiments/lingbot_*` into your LingBot-VLA `experiments/`
+folder and apply the integration snippets under `attacks/lingbot/integration/`.
+
+```bash
+GPU_ID=1 TASK_NAME=adjust_bottle bash attacks/lingbot/eval_robotwin_joint.sh
 ```
 
 ## Notes
